@@ -1,0 +1,5 @@
+{"room":"  Tiktok ","password":"","type":"public"}
+{"room":"1","password":"","type":"public"}
+{"room":"abhay","password":"1234","type":"private"}
+{"room":"  Sports","password":"","type":"public"}
+{"room":"hina","password":"","type":"public"}

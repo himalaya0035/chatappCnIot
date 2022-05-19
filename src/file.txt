@@ -1,0 +1,22 @@
+ if (type === 'private'){
+            if (found){
+                if (found.password !== password){
+                    socket.emit('passwordValidation','incorrect');
+                    return;
+                }
+            }else{
+                const data = {
+                    "room":room,
+                    "password":password,
+                    "type":type
+                }
+                fs.appendFile('./src/privateRooms.txt',JSON.stringify(data) + '\r\n', (err,data) => {
+                })
+            }
+        }else{
+            if (found){
+                socket.emit('roomexists','roomexists');
+                return;
+            }
+
+        }

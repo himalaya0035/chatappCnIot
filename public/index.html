@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  />
+    </head>
+    <body>
+        <div class="navbarChatApp">
+            <h2 class="navabrBrand">Chat Application</h2>
+            <h3 style="margin-right: 150px;">Hi <span id="userDisplayName"></span>!</h3>
+        </div>
+        <div class="pageWrapper">
+            <div class="globalChatRooms">
+                <h2>Global Chat Rooms</h2>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-users"></i>&nbsp;&nbsp;General</h4>
+                </div>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-soccer-ball-o"></i>&nbsp;&nbsp;Sports</h4>
+                </div>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-instagram"></i>&nbsp;&nbsp;Tiktok & Reels</h4>
+                </div>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-ban"></i>&nbsp;&nbsp;Adult</h4>
+                </div>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-gamepad"></i>&nbsp;&nbsp;Gaming</h4>
+                </div>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-film"></i>&nbsp;&nbsp;Movies and web series</h4>
+                </div>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-life-ring"></i>&nbsp;&nbsp;Life In General</h4>
+                </div>
+                <div class="globalRoom">
+                    <h4><i class="fa fa-desktop"></i>&nbsp;&nbsp;Programming</h4>
+                </div>
+            
+            </div>
+            <div class="centered-form__box">
+                <h1>Join</h1>
+                <form action="/chat.html">
+                    <label>Display name</label>
+                    <input spellcheck="false" type="text" name="username" id="displayName" placeholder="Display name" required>
+                    <label>Room</label>
+                    <input spellcheck="false" type="text" name="room" placeholder="Room" required>
+                    <label>Type of Room</label>
+                    <div class="options">
+                        <div>
+                            <input type="radio" checked name="roomType" id="public">
+                            <span>Public</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="roomType" id="private">
+                            <span>Private</span>
+                        </div>
+                    </div>
+                    <div id="showInPrivate">
+                        <label>Password</label>
+                        <input  type="password" id="password" placeholder="Enter Password">
+                    </div>
+                    
+                    <button>Join</button>
+                </form>
+            </div>
+        </div>
+       <script src="js/main.js"></script>
+    </body>
+</html>
